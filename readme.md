@@ -11,4 +11,4 @@ npm install
 gulp
 
 
-![工作截图](https://github.com/zhaoming-mike/sass-demo/docs/images/screen.png)
+![工作截图](https://github.com/zhaoming-mike/sass-demo/tree/master/docs/images/screen.png)
