@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhaoming-mike/hello-grunt.git"
+    "url": "git+https://github.com/zhaoming-mike/sass-demo.git"
   },
   "keywords": [
     "css",
@@ -19,9 +19,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zhaoming-mike/hello-grunt/issues"
+    "url": "https://github.com/zhaoming-mike/sass-demo/issues"
   },
-  "homepage": "https://github.com/zhaoming-mike/hello-grunt#readme",
+  "homepage": "https://github.com/zhaoming-mike/sass-demo#readme",
   "devDependencies": {
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
