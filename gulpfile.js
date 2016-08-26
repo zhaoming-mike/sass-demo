@@ -52,6 +52,7 @@ gulp.task('watch', function() {
   gulp.watch('production/*.html', browserSync.reload);
   // Watch .js files
   gulp.watch('src/js/*.js', ['scripts']);
+  gulp.watch('src/js/helpers/*.js', ['scripts']);
   // Watch .scss files
   gulp.watch('src/scss/*.scss', ['sass', 'sass-minify']);
 });
