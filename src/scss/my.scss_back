@@ -1,0 +1,65 @@
+@charset "UTF-8";
+//sass style
+//-----------------------------------
+$fontStack:    Helvetica, sans-serif;
+//$fontStack: 黑体;
+$primaryColor: #333;
+
+body {
+  font-family: $fontStack;
+  color: $primaryColor;
+}
+
+$linkColor:#08c;
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+  &:hover {
+    color:darken($linkColor, 10%);
+  }
+}
+
+body::first-line {
+  background-color: cyan;
+}
+li:nth-child(3) {
+  background-color: Cornsilk;
+}
+li:not(#div) {
+  //font-size: 22px;
+}
+li:hover {
+  //background-color:red;
+  //border-bottom: 1px solid black;
+  //text-decoration: underline;
+  background-color: Cornsilk;
+}
+div#div1 {
+  background-color: red;
+  padding-left: 10px;
+  border-width: 10px;
+  border:2px solid;
+  border-width: 10px;
+  border-color: green;
+  border-radius: 25px;
+  font-family: $fontStack;
+}
+span {
+  display: list-item;
+}
+#p1 {
+  background-color: red;
+}
+#s1 {
+  background-color: green;
+}
+#s2 {
+  background-color: yellow;
+  //font-size: 111px;
+  //visibility: hidden;
+}
+#s4 {
+  background-color: blue;
+  transform: translateY(30px);
+}

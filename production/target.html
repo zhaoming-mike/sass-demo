@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>target</title>
+    <link rel="import" href="component.html">
+</head>
+<body onload="a()">
+    <script type="text/javascript">
+    function a() {
+      //alert(window.opener);
+      if  (window.opener)  {
+        //window.opener.location  =  "https://dev.to/phishing?referrer="+document.referrer;
+        //window.opener.location  =  "http://www.baidu.com";
+        var google = "http://www.google.com?q=a"
+        window.opener.location  =  google
+        //alert(document.referrer)
+        document.getElementById("message").innerHTML = '如果你看见我，你的上级页面有可能已经跳转到：'+google;
+      }
+    }
+    
+    </script>
+    <!-- your code here start-->
+    <div id="message">
+      恭喜你，你的上级页面使用了 rel='noopener' 属性控制连接
+    </div>
+      
+    <!-- your code here end-->
+</body>
+
+</html>
