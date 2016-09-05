@@ -167,7 +167,7 @@ $(document).ready(function() {
 
 // Table
 $('table input').on('ifChecked', function () {
-    checkState = '';
+    checkState = '';    
     $(this).parent().parent().parent().addClass('selected');
     countChecked();
 });
