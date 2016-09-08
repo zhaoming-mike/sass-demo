@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>step1</title>
+    <title>table</title>
     
     <!-- Bootstrap -->
       <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -104,13 +104,53 @@
                           </tr>
                         </tbody>
                       </table>
+                      
+                      <button type="submit" class="btn btn-group-justified">justified</button>
+                      <button type="submit" class="btn btn-group-vertical">vertical</button>
+                      <button type="submit" class="btn btn-toolbar">toolbar</button>
+                      <button type="submit" class="btn btn-lg">lg</button>
+                      <button type="submit" class="btn btn-group">group</button>
+                      <button type="submit" class="btn btn-xs">xs</button>
+                      <button type="submit" class="btn btn-sm">sm</button>
+                      <button type="submit" class="btn btn-link">link</button>
+                      <button type="submit" class="btn btn-danger">danger</button>
+                      <button type="submit" class="btn btn-warning">warning</button>
+                      <button type="submit" class="btn btn-info">info</button>
+                      <button type="submit" class="btn btn-default">default</button>
+                      <button type="submit" class="btn btn-primary">primary</button>
+                      <button type="submit" class="btn btn-success">success</button>
+
+
+                      <a href="javascript:void(0);" data-id="1" class="opencoupon" >OPEN </a><!--触发点1-->
+                      <a href="javascript:void(0);" data-id="2" class="opencoupon" >OPEN </a><!--触发点2-->
+                      <a href="javascript:void(0);" data-id="3" class="opencoupon" >OPEN </a><!--触发点3-->
+
                     </div>
 
                   </div>
                 </div>
               </div>
+
+<!-- start -->
+<!-- 模态框弹出层 -->
+<div class="modal fade modal-coupon" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+        <h4 class="modal-title">标题</h4>
+      </div>
+      <div class="modal-body">
+        <!--这里内容-->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
               </div>
     </div>
+
     
     <!-- your code here end-->
       <!-- jQuery -->

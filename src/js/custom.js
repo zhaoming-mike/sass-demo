@@ -218,6 +218,55 @@ function countChecked() {
     }
 }
 
+//Test
+$('.opencoupon').click(function(){
+        $('.modal-coupon').modal({
+              show: true,
+              //backdrop: false,此参数用于禁用点其他地方自动关闭
+            })  //弹出框       
+        var gid = $(this).attr('data-id');
+        //AJAX获取内容  
+        var url = 'xxxxx'+ gid
+        var testurl = 'http://stats.yy.com/nyy/user?appId=1&data={%22id%22:' + gid + '}&callback=?'
+        //var testurl = 'http://localhost:3000/test.json'
+        $.getJSON(testurl,{"r":url},function(json)
+        {
+            console.log(json)
+                //if(json.status==1){
+
+                    $('.modal-body').append(json.data.userName);//写入返回回来内容
+                    //$('.modal-body').append(json.data);//写入返回回来内容
+
+                    
+                //} else {
+                //        alert(json.data);
+                //}
+                return false;
+        });       
+        
+});
+
+//关闭时，清除之前的数据。
+$(".modal-coupon").on("hidden.bs.modal", function() {
+    //alert(1)
+    $('.modal-body').html('');
+    $('.couponalllist').html('');
+    $(this).removeData("bs.modal");
+});
+
+
+
+//button
+$(document).ready(function() {
+    $(".btn-danger").on("click", function () {
+        var a = $(this).parent();
+        console.log(
+            a
+            );
+
+    });
+});
+
 // Accordion
 $(document).ready(function() {
     $(".expand").on("click", function () {
