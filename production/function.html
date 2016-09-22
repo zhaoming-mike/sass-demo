@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>function</title>
+	</head>
+	<body>
+		<input type="text" id="input_1" />
+		<button id='button_1'>测试</button>
+		<script>
+		var a = 'aaaaa';
+			function aaa() {
+					alert(document.getElementById("input_1").value)
+			}
+			window.onload = function() {
+				var btn = document.getElementById("button_1");
+				btn.onclick = function() {
+					var text = document.getElementById("input_1").value
+					var p = document.createElement("p");
+					console.log(p);
+					p.innerHTML = text;
+					document.body.appendChild(p)
+					console.log(window.a);
+
+				}
+			}
+		</script>
+	</body>
+</html>

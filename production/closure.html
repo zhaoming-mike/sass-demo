@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Closure</title>
+		<!-- Bootstrap -->
+	    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		
+		<style>
+			code.event {
+				color: #2a839e;
+				background-color: #f5fafb;
+				border: 1px solid #a8ddec;
+				white-space: nowrap;
+			}
+			code.event:after {
+				content: 'Event';
+			}
+			code:after {
+				display: inline-block;
+				border-left: 1px solid rgba(0,0,0,0.2);
+				margin-left: 4px;
+				padding-left: 4px;
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+
+	<body>
+		<code class='event'>
+		function () {
+				alert('')
+			}
+			
+		</code>
+		<input type="text" id="name" />
+		<input type="text" id="email" />
+		<input type="text" id="age" />
+		<script type="text/javascript">
+			function showHelp(item) {
+				document.getElementById(item.id).value = item.help;
+			}
+			function a(item) {
+				return function (){showHelp(item);}
+			}
+			function setupHelp() {
+				var helpText = [
+					{'id': 'email', 'help': 'Your e-mail address'},
+					{'id': 'name', 'help': 'Your full name'},
+					{'id': 'age', 'help': 'Your age (you must be over 16)'}
+				];
+
+				for (var i = 0; i < helpText.length; i++) {
+					var item = helpText[i];
+					console.log(document.getElementById(item.id))
+					document.getElementById(item.id).onfocus = a(item);
+					/*document.getElementById(item.id).onfocus = function() {
+						a(item);
+					}*/
+				}
+			}
+			setupHelp();
+		</script>
+	</body>
+</html>
