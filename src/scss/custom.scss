@@ -1,5 +1,5 @@
 .left_col {
-  background: #2A3F54;
+  background: #2A3F54; /* mike test */
 }
 .nav-sm .container.body .col-md-3.left_col {
   min-height: 100%;
@@ -190,7 +190,7 @@
 }
 .nav-md .container.body .col-md-3.left_col {
   min-height: 100%;
-  width: 230px;
+  width: 240px;   /* 1.mike 230px -> 240px */
   padding: 0;
   position: absolute;
   display: flex;
@@ -205,10 +205,10 @@ body .container.body .right_col {
 }
 .nav-md .container.body .right_col {
   padding: 10px 20px 0;
-  margin-left: 230px;
+  margin-left: 240px; /* 2.mike 230px -> 240px */
 }
 .nav_title {
-  width: 230px;
+  width: 240px; /* 3.mike 230px -> 240px */
   float: left;
   background: #2A3F54;
   border-radius: 0;
@@ -344,7 +344,7 @@ body {
 }
 .main_container .top_nav {
   display: block;
-  margin-left: 230px;
+  margin-left: 240px; /* 4.mike 230px -> 240px */
 }
 .main_container {}
 .no-padding {
@@ -1532,7 +1532,7 @@ span.right {
   display: block;
   padding: 5px 0 0 0;
   position: fixed;
-  width: 230px;
+  width: 240px; /* 5.mike 230px -> 240px */
   background: #2A3F54;
 }
 .sidebar-footer a {
@@ -1564,7 +1564,7 @@ span.right {
 
 @media (min-width: 992px) {
   footer {
-    margin-left: 230px;
+    margin-left: 240px; /* 6.mike 230px -> 240px */
   }
 }
 
@@ -4413,7 +4413,7 @@ ul.notifications {
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 4px;
-  width: 230px;
+  width: 240px; /* 7.mike 230px -> 240px */
   overflow: hidden;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
